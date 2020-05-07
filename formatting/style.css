@@ -1,0 +1,39 @@
+html body {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  width: 40%;
+  height: 400%;
+  position: relative;
+  justify-items: start;
+}
+
+.logo:hover {
+  width: 50%;
+  height: 50%;
+}
+
+.wrapper {
+  display: inline-grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+}
+
+#nav {
+  position: absolute;
+  right: 1px;
+}
+
+#jumbo {
+  text-align: center;
+  background-color: black;
+}
+
+.NavCol {
+  color: white;
+}
