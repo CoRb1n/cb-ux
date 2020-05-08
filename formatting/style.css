@@ -2,13 +2,13 @@ html body {
   background-color: black;
   height: 100%;
   width: 100%;
-  padding: 0;
+  padding: 10px;
   margin: 0;
 }
 
 .logo {
   width: 40%;
-  height: 400%;
+  height: 40%;
   position: relative;
   justify-items: start;
 }
@@ -36,4 +36,61 @@ html body {
 
 .NavCol {
   color: white;
+}
+
+#page {
+  display: grid;
+  width: auto;
+  height: auto;
+  grid-template-areas:
+    "aa b c"
+    "aa d e" "aa f g";
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 20px;
+  justify-self: stretch;
+}
+
+.aa {
+  grid-area: aa;
+  justify-self: stretch;
+}
+
+.b {
+  grid-area: b;
+  justify-self: stretch;
+}
+
+.c {
+  grid-area: c;
+  justify-self: stretch;
+}
+
+.d {
+  grid-area: d;
+  justify-self: stretch;
+}
+
+.e {
+  grid-area: e;
+  justify-self: stretch;
+}
+
+.f {
+  grid-area: f;
+  justify-self: stretch;
+}
+
+#page > .aa {
+  background-color: white;
+  justify-self: stretch;
+}
+
+#page h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
 }
