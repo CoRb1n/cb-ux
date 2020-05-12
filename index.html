@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>CB-UX Responsive Development</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -16,7 +16,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header>
       <div class="wrapper">
@@ -28,7 +33,9 @@
         <div>
           <nav id="nav" class="navbar navbar-dark navbar-1 white">
             <!-- Navbar brand -->
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a id="navText" class="navbar-brand" href="#"
+              >CB-UX Site Navigation</a
+            >
 
             <!-- Collapse button -->
             <button
@@ -68,23 +75,18 @@
     </header>
 
     <main>
-      <br />
-      <br />
-
       <section id="page">
-        <div class="aa">
-          <img src="/assetts/images/logo.jpg" alt="" />
-        </div>
         <div class="b">
-          <img src="assetts/images/html.jpg" alt="html" />
-          <h1>HTML development</h1>
+          <img src="assetts/images/html5.jpg" alt="html" />
+          <h1>responsive HTML development</h1>
         </div>
         <div class="c">
-          <img src="" alt="html" />
+          <img src="assetts/images/css3.jpg" alt="html" />
+          <h1>rich and responsive css styling</h1>
         </div>
         <div class="d">
-          <img src="assetts/images/cms.jpg" alt="cms" />
-          <h1>CMS web development</h1>
+          <img src="assetts/images/javascript.jpg" alt="javascript" />
+          <h1>functional javascript programming</h1>
         </div>
         <div class="e">
           <img src="assetts/images/cms.jpg" alt="cms" />
@@ -99,6 +101,22 @@
           <h1>back-end deployment and site management</h1>
         </div>
       </section>
+      <div id="jumbo" class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-3">CB-UX</h1>
+          <p class="lead">Where Creativity Meets Functionality</p>
+          <hr class="my-2" />
+          <p>Select Below To Find Out More</p>
+          <p class="lead">
+            <a
+              class="btn btn-primary btn-lg"
+              href="Jumbo action link"
+              role="button"
+              >ABOUT CB-UX</a
+            >
+          </p>
+        </div>
+      </div>
     </main>
 
     <footer></footer>
@@ -107,18 +125,6 @@
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
-
-    <div class="alert">
-      <button
-        type="button"
-        class="close"
-        data-dismiss="alert"
-        aria-hidden="true"
-      >
-        &times;
-      </button>
-      <strong>Title!</strong> Alert body ...
-    </div>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

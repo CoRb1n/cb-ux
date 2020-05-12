@@ -2,31 +2,30 @@ html body {
   background-color: black;
   height: 100%;
   width: 100%;
-  padding: 10px;
-  margin: 0;
+  padding: 30px;
+  margin: auto;
 }
 
 .logo {
-  width: 40%;
-  height: 40%;
-  position: relative;
+  width: 60%;
+  height: 60%;
   justify-items: start;
-}
-
-.logo:hover {
-  width: 50%;
-  height: 50%;
 }
 
 .wrapper {
   display: inline-grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
+  font-size: 1vw;
 }
 
 #nav {
   position: absolute;
   right: 1px;
+}
+
+#navText {
+  font-size: 2vw;
 }
 
 #jumbo {
@@ -39,21 +38,21 @@ html body {
 }
 
 #page {
+  margin: 5%;
   display: grid;
-  width: auto;
-  height: auto;
   grid-template-areas:
-    "aa b c"
-    "aa d e" "aa f g";
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 1fr 2fr 2fr;
-  gap: 20px;
-  justify-self: stretch;
+    "b c d"
+    "e f g";
+  grid-template-columns: auto-fit;
+  gap: 1rem;
 }
-
-.aa {
-  grid-area: aa;
-  justify-self: stretch;
+@media (max-width: 600px) {
+  #page {
+    display: grid;
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 .b {
@@ -81,16 +80,25 @@ html body {
   justify-self: stretch;
 }
 
-#page > .aa {
-  background-color: white;
+.g {
+  grid-area: g;
   justify-self: stretch;
 }
 
 #page h1 {
   text-align: center;
   text-transform: uppercase;
+  color: darkgray;
+  font-family: "Monoton", cursive;
+  font-size: 1.5rem;
 }
 
 img {
   width: 100%;
+}
+
+#jumbo {
+  background-image: url("../assetts/images/css-texture-modern-technology-background-cascading-style-sheets-css-code-texture-black-background.jpg");
+  opacity: 0.6;
+  color: white;
 }
