@@ -3,7 +3,12 @@ html body {
   height: 100%;
   width: 100%;
   padding: 30px;
+<<<<<<< HEAD
   margin: auto;
+=======
+  margin: 20px;
+  font-family: "Righteous";
+>>>>>>> 801eb4297e3a68c4844e6726926fb1a434598cce
 }
 
 .logo {
@@ -89,8 +94,11 @@ html body {
   text-align: center;
   text-transform: uppercase;
   color: darkgray;
+<<<<<<< HEAD
   font-family: "Monoton", cursive;
   font-size: 1.5rem;
+=======
+>>>>>>> 801eb4297e3a68c4844e6726926fb1a434598cce
 }
 
 img {
