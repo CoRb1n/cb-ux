@@ -2,13 +2,8 @@ html body {
   background-color: black;
   height: 100%;
   width: 100%;
-  padding: 30px;
-<<<<<<< HEAD
+  padding: 30px 30px 0px 30px;
   margin: auto;
-=======
-  margin: 20px;
-  font-family: "Righteous";
->>>>>>> 801eb4297e3a68c4844e6726926fb1a434598cce
 }
 
 .logo {
@@ -94,11 +89,8 @@ html body {
   text-align: center;
   text-transform: uppercase;
   color: darkgray;
-<<<<<<< HEAD
   font-family: "Monoton", cursive;
   font-size: 1.5rem;
-=======
->>>>>>> 801eb4297e3a68c4844e6726926fb1a434598cce
 }
 
 img {
@@ -109,4 +101,51 @@ img {
   background-image: url("../assetts/images/css-texture-modern-technology-background-cascading-style-sheets-css-code-texture-black-background.jpg");
   opacity: 0.6;
   color: white;
+}
+
+.bottomFooter {
+  position: relative;
+  height: 50px;
+  background-color: rgb(17, 30, 30);
+  padding-bottom: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.5vw;
+}
+
+.bottomFooter > div {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  padding: 0;
+}
+
+.bottomFooter2 {
+  height: 300px;
+}
+
+#footerDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+#footerDiv > .rightFooter {
+  height: 100%;
+  width: auto;
+}
+
+#footerDiv > .centerFooter {
+}
+
+#footerDiv > .leftFooter {
+  height: 100%;
+  width: auto;
+}
+
+.logoBottom {
+  position: relative;
+  height: 30%;
+  width: 50%;
 }
