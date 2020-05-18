@@ -8,21 +8,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <script
-      type="text/javascript"
-      src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
-      data-dojo-config="usePlainJson: true, isDebug: false"
-    ></script>
-    <script type="text/javascript">
-      window.dojoRequire(["mojo/signup-forms/Loader"], function (L) {
-        L.start({
-          baseUrl: "mc.us4.list-manage.com",
-          uuid: "5bf8c57e30452ddbc4838a438",
-          lid: "e7607c9292",
-          uniqueMethods: true,
-        });
-      });
-    </script>
 
     <link rel="stylesheet" href="formatting/style.css" type="text/css" />
     <!-- fontawesome cdn -->
@@ -144,11 +129,13 @@
     <footer>
       <div class="bottomFooter bottomFooter2">
         <div id="footerDiv">
-          <div class="leftFooter">
+          <div id="leftFoot" class="leftFooter">
             <div class="logoBottom">
-              <img src="./assetts/images/logo.jpg" alt="cb-ux" />
+              <img src="assetts/images/logo.jpg" alt="logoBottom" />
             </div>
-            <p>contact details</p>
+            <div>
+              <p>contact details</p>
+            </div>
           </div>
           <div class="centerFooter"></div>
           <div class="rightFooter"></div>

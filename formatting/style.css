@@ -114,7 +114,7 @@ img {
 }
 
 .bottomFooter > div {
-  position: absolute;
+  position: relative;
   width: 100%;
   text-align: center;
   bottom: 0;
@@ -128,7 +128,9 @@ img {
 #footerDiv {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 #footerDiv > .rightFooter {
@@ -144,8 +146,19 @@ img {
   width: auto;
 }
 
+#leftFoot {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  height: 100%;
+  width: 100%;
+}
+
 .logoBottom {
-  position: relative;
-  height: 30%;
-  width: 50%;
+  display: block;
+  margin: auto;
+  max-width: 150px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
 }
