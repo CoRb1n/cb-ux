@@ -106,7 +106,7 @@ img {
 .bottomFooter {
   position: relative;
   height: 50px;
-  background-color: rgb(17, 30, 30);
+  background-color: black;
   padding-bottom: 0;
   color: white;
   text-transform: uppercase;
@@ -289,4 +289,17 @@ img {
     left: 110%;
     opacity: 0;
   }
+}
+
+.about {
+  text-align: center;
+  color: antiquewhite;
+}
+
+#face {
+  border-radius: 40%;
+  max-width: 200px;
+  max-height: 200px;
+  transform: rotate(90deg);
+  padding: 5%;
 }
