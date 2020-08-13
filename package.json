@@ -1,0 +1,22 @@
+{
+  "name": "cb-ux",
+  "version": "1.0.0",
+  "description": "cb-ux website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoRb1n/cb-ux.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoRb1n/cb-ux/issues"
+  },
+  "homepage": "https://github.com/CoRb1n/cb-ux#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  }
+}
