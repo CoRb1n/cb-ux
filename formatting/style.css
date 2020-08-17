@@ -337,3 +337,17 @@ img {
   max-width: 400px;
   padding-top: 10%;
 }
+
+.about i {
+  font-size: 2vw;
+  color: purple;
+  padding: 5% 0 5% 0;
+}
+
+.about h4 {
+  font-weight: bolder;
+}
+
+#purple {
+  background-color: rgb(143, 6, 143);
+}
