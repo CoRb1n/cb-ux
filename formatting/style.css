@@ -351,3 +351,7 @@ img {
 #purple {
   background-color: rgb(143, 6, 143);
 }
+
+.paint {
+  background-image: url();
+}
