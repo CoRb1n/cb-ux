@@ -5,6 +5,8 @@ html body {
   padding: 30px 30px 0px 30px;
   margin: auto;
   font-size: 1rem;
+  font-family: "Roboto Mono", monospace;
+  line-height: 1rem;
 }
 
 .logo {
@@ -18,15 +20,6 @@ html body {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
   font-size: 1vw;
-}
-
-#nav {
-  position: absolute;
-  right: 1px;
-}
-
-#navText {
-  font-size: 2vw;
 }
 
 #jumbo {
@@ -86,12 +79,48 @@ html body {
   justify-self: stretch;
 }
 
+.b:hover {
+  grid-area: b;
+  justify-self: stretch;
+  border: white solid 0.1rem;
+}
+
+.c:hover {
+  grid-area: c;
+  justify-self: stretch;
+  border: white solid 0.1rem;
+}
+
+.d:hover {
+  grid-area: d;
+  justify-self: stretch;
+  border: white solid 0.1rem;
+}
+
+.e:hover {
+  grid-area: e;
+  justify-self: stretch;
+  border: white solid 0.1rem;
+}
+
+.f:hover {
+  grid-area: f;
+  justify-self: stretch;
+  border: white solid 0.1rem;
+}
+
+.g:hover {
+  grid-area: g;
+  justify-self: stretch;
+  border: white solid 0.1rem;
+}
+
 #page h1 {
   text-align: center;
   text-transform: uppercase;
   color: darkgray;
-  font-family: "Monoton", cursive;
-  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3rem;
 }
 
 img {
@@ -111,14 +140,28 @@ img {
   padding-bottom: 0;
   color: white;
   text-transform: uppercase;
-  font-size: 0.5vw;
+  font-size: 1rem;
 }
 
 .bottomFooter > div {
-  position: relative;
   width: 100%;
   text-align: center;
-  bottom: 0;
+  padding: 0;
+}
+
+.bottomFooter3 {
+  position: relative;
+  height: 50px;
+  background-color: black;
+  padding-bottom: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.bottomFooter3 > div {
+  width: 100%;
+  text-align: center;
   padding: 0;
 }
 
@@ -127,6 +170,7 @@ img {
 }
 
 #footerDiv {
+  position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100%;
@@ -134,28 +178,19 @@ img {
   width: 100%;
 }
 
-@media (max-width: 600px) {
-  #footerDiv {
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 100%;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-  }
-}
-
 #footerDiv > .rightFooter {
   height: 100%;
-  width: auto;
+  width: 100%;
 }
 
 #footerDiv > .centerFooter {
+  height: 100%;
+  width: 100%;
 }
 
 #footerDiv > .leftFooter {
   height: 100%;
-  width: auto;
+  width: 100%;
 }
 
 #leftFoot {
@@ -174,50 +209,165 @@ img {
   width: auto;
   height: auto;
 }
-
+.footerInfo {
+  line-height: 100%;
+}
 .footerInfo > p {
   margin-left: 5%;
   margin-right: 5%;
   text-align: start;
-  font-size: 1em;
+  font-size: 0.8rem;
 }
 
 .rightFooter > h2 {
   position: relative;
   margin-top: 20px;
   text-decoration: underline;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-align: end;
   padding: 3%;
 }
 
 .rightFooter > ul {
-  font-size: 0.8vw;
+  font-size: 1rem;
   list-style: none;
   text-align: end;
   padding: 3%;
 }
 
+.leftFooter > h2 {
+  position: relative;
+  margin-top: 20px;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  text-align: start;
+  padding: 3%;
+}
+
+.leftFooter > ul {
+  font-size: 1rem;
+  list-style: none;
+  text-align: start;
+  padding: 3%;
+}
+
 @media (max-width: 600px) {
-  .footerInfo p {
-    font-size: 0.5em;
-    text-align: center;
+  #leftFoot {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100% 100%;
+    height: 100%;
+    width: 100%;
   }
 
-  .rightFooter > ul {
-    font-size: 2vw;
+  #footerDiv {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100% 100% 100%;
+    height: 100%;
+    width: 100%;
+  }
+
+  #footerDiv > .rightFooter {
+    height: 100%;
+    width: 100%;
+  }
+
+  #footerDiv > .centerFooter {
+    height: 100%;
+    width: 100%;
+  }
+
+  #footerDiv > .leftFooter {
+    height: 100%;
+    width: 100%;
+  }
+
+  .leftFooter > ul {
+    font-size: 1.5rem;
     list-style: none;
     text-align: center;
     padding: 3%;
   }
-  .rightFooter > h2 {
+
+  .logoBottom {
     position: relative;
+    margin: auto;
+    max-width: 1000px;
+    max-height: 1000px;
+    width: auto;
+    height: auto;
+  }
+  .footerInfo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .footerInfo > p {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .rightFooter {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .rightFooter > ul {
+    font-size: 0.8rem;
+    list-style: none;
+    text-align: center;
+    padding: 3%;
+  }
+
+  .rightFooter > h2 {
     padding: 1%;
-    font-size: 1vw;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .leftFooter > h2 {
+    margin-top: 20px;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 3%;
   }
   .bottomFooter {
     position: relative;
-    font-size: 1em;
+    height: 50px;
+    background-color: black;
+    padding-bottom: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+
+  .bottomFooter > div {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .bottomFooter2 {
+    height: 300px;
+  }
+  .bottomFooter3 {
+    height: 50px;
+    background-color: black;
+    padding: 3%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+
+  .bottomFooter3 > div {
+    width: 100%;
+    text-align: center;
+    padding: 0;
   }
 }
 
@@ -226,27 +376,53 @@ img {
 .item-3 {
   position: absolute;
   display: block;
-  top: 50%;
-
+  top: 40%;
   width: 60%;
-  font-size: 1vw;
-
+  font-size: 1.3rem;
+  overflow: visible;
   animation-duration: 20s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  line-height: 1.5em;
 }
 
 .slideShow {
   overflow: hidden;
   position: relative;
   color: white;
-  height: 250px;
+  max-height: 800px;
+  height: 500px;
   width: 100%;
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .slideShow {
+    overflow: hidden;
+    position: relative;
+    color: white;
+    height: 600px;
+    width: 100%;
+    text-align: center;
+  }
+  .item-1,
+  .item-2,
+  .item-3 {
+    position: absolute;
+    display: block;
+    top: 40%;
+    width: 60%;
+    height: 400px;
+    font-size: 1rem;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    margin: 0;
+  }
+}
+
 .slideShow > h2 {
-  font-size: 1vw;
+  font-size: 1.5rem;
   text-decoration: underline;
   font-weight: bold;
 }
@@ -319,10 +495,20 @@ img {
 .about {
   text-align: center;
   color: antiquewhite;
+  position: relative;
+  margin: 0 25%;
+}
+
+.about2 {
+  text-align: center;
+  color: antiquewhite;
+  position: relative;
+  padding-bottom: 15rem;
+  background: purple;
 }
 
 .about h1 h3 h5 {
-  font-size: 2vw;
+  font-size: 2rem;
 }
 
 #face {
@@ -339,8 +525,8 @@ img {
   padding-top: 10%;
 }
 
-.about i {
-  font-size: 2vw;
+.skills i {
+  font-size: 4rem;
   color: purple;
   padding: 5% 0 5% 0;
 }
@@ -355,20 +541,13 @@ img {
   text-decoration: underline;
 }
 
-.about {
-  position: relative;
+.purple2 {
+  background: purple;
 }
-
 .purple {
   position: relative;
   background-image: url("../assetts/images/paintSmudge.png");
-  background-position: top;
-  margin-top: 0;
-  border-top: 0;
-  padding-top: 0;
   background-repeat: no-repeat;
-  height: 200px;
-  width: 100%;
 }
 
 #outline {
@@ -382,14 +561,14 @@ img {
   text-align: center;
 }
 
-.MyRecentWork {
+.MyRecentWork,
+h2 {
   text-align: center;
   color: white;
-  padding-top: 10%;
-}
-
-.MyRecentWork h4 {
+  padding-top: 5%;
+  padding-bottom: 3%;
   font-weight: bolder;
+  text-decoration: underline;
 }
 
 .recent {
@@ -465,4 +644,17 @@ img {
 .fade-in {
   opacity: 0;
   animation: fadeIn 0.5s ease-in forwards;
+}
+
+.skills {
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
+  background-color: black;
+  max-width: 1500px;
+  margin: 0 auto;
+  width: auto;
+  border-radius: 12px;
+  margin-top: -5rem;
+  z-index: 100;
 }
