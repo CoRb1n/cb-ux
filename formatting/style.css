@@ -9,6 +9,9 @@ html body {
   line-height: 1rem;
 }
 
+button.navbar-toggler {
+  font-size: 1.1rem;
+}
 .logo {
   width: 60%;
   height: 60%;
@@ -181,6 +184,18 @@ img {
 #footerDiv > .rightFooter {
   height: 100%;
   width: 100%;
+  color: grey;
+}
+.rightFooter > ul > li {
+  line-height: 1.8rem;
+}
+
+.rightFooter > ul > li > a {
+  color: grey;
+}
+
+.rightFooter > ul > li > a:hover {
+  color: purple;
 }
 
 #footerDiv > .centerFooter {
@@ -192,6 +207,14 @@ img {
   height: 100%;
   width: 100%;
 }
+.leftFooter > ul > li > a {
+  color: grey;
+  line-height: 1.8rem;
+}
+
+.leftFooter > ul > li > a:hover {
+  color: purple;
+}
 
 #leftFoot {
   display: grid;
@@ -202,6 +225,9 @@ img {
 }
 
 .logoBottom {
+  animation: fadeIn2 3s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
   display: block;
   margin: auto;
   max-width: 150px;
@@ -226,6 +252,7 @@ img {
   font-size: 1.5rem;
   text-align: end;
   padding: 3%;
+  color: lightslategray;
 }
 
 .rightFooter > ul {
@@ -233,6 +260,7 @@ img {
   list-style: none;
   text-align: end;
   padding: 3%;
+  line-height: 100%;
 }
 
 .leftFooter > h2 {
@@ -242,6 +270,7 @@ img {
   font-size: 1.5rem;
   text-align: start;
   padding: 3%;
+  color: lightslategray;
 }
 
 .leftFooter > ul {
@@ -335,6 +364,7 @@ img {
     font-size: 1.5rem;
     text-align: center;
     padding: 3%;
+    color: lightslategray;
   }
   .bottomFooter {
     position: relative;
@@ -496,7 +526,15 @@ img {
   text-align: center;
   color: antiquewhite;
   position: relative;
-  margin: 0 25%;
+  margin: 10% 25% 0 25%;
+}
+
+#About > h1 {
+  padding-bottom: 10%;
+}
+
+#About {
+  line-height: 2rem;
 }
 
 .about2 {
@@ -507,10 +545,23 @@ img {
   background: purple;
 }
 
-.about h1 h3 h5 {
-  font-size: 2rem;
+.about2 > div {
+  padding-top: 3%;
 }
 
+.about2 > div > p {
+  padding: 1% 5% 0 5%;
+}
+
+.about h4 {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.about h6 {
+  font-weight: bolder;
+  text-decoration: underline;
+}
 #face {
   border-radius: 40%;
   max-width: 200px;
@@ -531,16 +582,9 @@ img {
   padding: 5% 0 5% 0;
 }
 
-.about h4 {
-  font-weight: bolder;
+.skills h6 {
   text-decoration: underline;
 }
-
-.about h6 {
-  font-weight: bolder;
-  text-decoration: underline;
-}
-
 .purple2 {
   background: purple;
 }
@@ -559,6 +603,7 @@ img {
   padding: 0;
   list-style-type: none;
   text-align: center;
+  line-height: 100%;
 }
 
 .MyRecentWork,
@@ -649,12 +694,149 @@ h2 {
 .skills {
   position: relative;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: black;
-  max-width: 1500px;
-  margin: 0 auto;
+  max-width: 80%;
   width: auto;
   border-radius: 12px;
-  margin-top: -5rem;
+  margin-top: -10rem;
   z-index: 100;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 1.2rem;
+}
+
+.block {
+  display: grid;
+  width: 100%;
+  height: fit-content;
+  padding: 10% 0 10% 0;
+}
+
+.form {
+  width: 75%;
+}
+
+.con {
+  position: relative;
+  width: 25%;
+}
+
+.links {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 20%;
+  display: inline-grid;
+  line-height: 3rem;
+}
+
+.links a h3 {
+  display: table;
+  color: grey;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+
+.Form {
+  animation: fadeIn 5s 1;
+}
+
+.connect {
+  height: 350px;
+}
+
+#Contact {
+  height: 100%;
+  text-align: center;
+  color: white;
+  padding: 5% 0 5% 0;
+  padding: 4%;
+}
+
+#Contact::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("../assetts/images/contactImg.jpg");
+  opacity: 0.2;
+  content: "";
+  z-index: -1;
+  background-size: contain;
+}
+
+#Corbin {
+  height: 100%;
+  text-align: center;
+  color: white;
+  padding: 5% 0 5% 0;
+  padding: 4%;
+}
+
+#Corbin::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("../assetts/images/corbinImg.jpg");
+  opacity: 0.2;
+  content: "";
+  z-index: -1;
+  background-size: contain;
+}
+
+.vid > video {
+  position: relative;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.afford {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  text-align: center;
+  padding: 10% 0 10% 0;
+}
+
+.afford > h1 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: white;
 }
