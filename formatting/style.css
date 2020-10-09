@@ -6,12 +6,13 @@ html body {
   margin: auto;
   font-size: 1rem;
   font-family: "Roboto Mono", monospace;
-  line-height: 1rem;
+  line-height: 1.2rem;
 }
 
 @media (max-width: 600px) {
-  html body {
-    font-size: 40%;
+  #trends > h1 {
+    font-size: 100% !important;
+    line-height: 2rem;
   }
 }
 
@@ -790,16 +791,11 @@ h2 {
   animation: fadeIn 5s 1;
 }
 
-.connect {
-  height: 350px;
-}
-
 #Contact {
   height: 100%;
   text-align: center;
   color: white;
-  padding: 5% 0 5% 0;
-  padding: 4%;
+  padding: 10% 0 10% 0;
 }
 
 #Contact::before {
@@ -819,8 +815,7 @@ h2 {
   height: 100%;
   text-align: center;
   color: white;
-  padding: 5% 0 5% 0;
-  padding: 4%;
+  padding: 10% 0 10% 0;
 }
 
 #Corbin::before {
@@ -858,14 +853,9 @@ h2 {
   color: white;
 }
 
-div.hxpE4Bu-CE2v_cGYWDxiMw {
-  visibility: hidden;
-}
-
 #trends {
   padding: 0% 5% 3% 5%;
   color: grey;
   text-align: center;
-  font-size: 1.25rem;
   line-height: 2rem;
 }
