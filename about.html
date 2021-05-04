@@ -40,6 +40,8 @@
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 		<link
 			rel="stylesheet"
@@ -153,58 +155,126 @@
 				<div class="MyRecentWork">
 					<h3>My Recent Work</h3>
 				</div>
-				<div>
-					<div id="demo" class="carousel slide" data-ride="carousel">
-						<ul class="carousel-indicators">
-							<li data-target="#demo" data-slide-to="0" class="active"></li>
-							<li data-target="#demo" data-slide-to="1"></li>
-							<li data-target="#demo" data-slide-to="2"></li>
-						</ul>
-						<div id="frame" class="carousel-inner">
-							<div class="carousel-item active">
-								<iframe src="https:/www.aluminiumandglassmaster.co.za"></iframe>
-								<br />
-								<div class="carousel-caption">
-									<h3>Aluminium And Glass Master</h3>
-									<p>
-										This website was created with elements from bootstrap and
-										written with using CSS, Javascript, and a few different
-										design tools
-									</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<iframe src="https:/www.cb-ux.co.za"></iframe>
-								<br />
-								<div class="carousel-caption">
-									<h3>CB-UX, this is my own Website.</h3>
-									<p>
-										This has been built from the ground up using Sass,
-										JavaScript, Bootstrap and a few design tools
-									</p>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<iframe src="https:/www.gskeys.co.za"></iframe>
-
-								<br />
-								<div class="carousel-caption">
-									<h3>GS Keys</h3>
-									<p>
-										Fully custom written website featuring Bootstrap, CSS,
-										JavaScript
-									</p>
-								</div>
-							</div>
+				<div class="container-fluid">
+					<script>
+						AOS.init();
+					</script>
+					<div class="row">
+						<div
+							data-aos-duration="3000"
+							data-aos="fade-up"
+							class="col-md-6 px-md-5 py-md-5"
+						>
+							<a href="https://aluminiumandglassmaster.co.za/"
+								><img
+									class="border border-white"
+									src="assetts/images/aluminiumand.png"
+									alt=""
+								/>
+								<h4 class="text-center">Aluminium And Glassmaster</h4></a
+							>
 						</div>
-						<a class="carousel-control-prev" href="#demo" data-slide="prev">
-							<span class="carousel-control-prev-icon"></span>
-						</a>
-						<a class="carousel-control-next" href="#demo" data-slide="next">
-							<span class="carousel-control-next-icon"></span>
-						</a>
+						<div
+							data-aos-duration="3000"
+							data-aos="fade-up"
+							class="col-md-6 px-md-5 py-md-5"
+						>
+							<a href="https://tonymartinfamilylaw.com.au/"
+								><img
+									class="border border-white"
+									src="assetts/images/TonyMartin.png"
+									alt=""
+								/>
+								<h4 class="text-center">Tony Martin Family Law</h4></a
+							>
+						</div>
+					</div>
+					<div class="row">
+						<div
+							data-aos="zoom-in"
+							data-aos-duration="3000"
+							class="col-md-12 px-md-5 py-md-5"
+						>
+							<a href="https://www.cb-ux.co.za/"
+								><img
+									class="border border-white"
+									src="assetts/images/cbux.png"
+									alt=""
+								/>
+								<h4 class="text-center">Aluminium And Glassmaster</h4></a
+							>
+						</div>
+					</div>
+					<div class="row">
+						<div
+							data-aos="fade-right"
+							data-aos-duration="5000"
+							class="col-md-6 px-md-5 py-md-5"
+						>
+							<a href="https://mikesfiberglass.co.za/index.html"
+								><img
+									class="border border-white"
+									src="assetts/images/mikesfiber.png"
+									alt=""
+								/>
+								<h4 class="text-center">Mikes Fiberglass</h4></a
+							>
+						</div>
+						<div
+							data-aos="fade-left"
+							data-aos-duration="5000"
+							class="col-md-6 px-md-5 py-md-5"
+						>
+							<a href="https://www.probitymortgages.co.uk/"
+								><img
+									class="border border-white"
+									src="assetts/images/probitymortgages.png"
+									alt=""
+								/>
+								<h4 class="text-center">Probity Mortgages</h4></a
+							>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-6 px-md-5 py-md-5">
+							<a href="https://www.gskeys.co.za/"
+								><img
+									class="border border-white"
+									src="assetts/images/gskeys.png"
+									alt=""
+								/>
+								<h4 class="text-center">GS Keys</h4></a
+							>
+						</div>
+					</div>
+					<div class="MyRecentWork">
+						<h3>Current / Under Construction</h3>
+					</div>
+					<div class="row">
+						<div class="col-md-6 px-md-5 py-md-5">
+							<a href="https://store.reeftribe.co.za/"
+								><img
+									class="border border-white"
+									src="assetts/images/reeftribe.png"
+									alt=""
+								/>
+								<h4 class="text-center">ReefTribe</h4></a
+							>
+						</div>
+						<div class="col-md-6 px-md-5 py-md-5">
+							<a href="https://www.probitymortgages.co.uk/"
+								><img
+									class="border border-white"
+									src="assetts/images/reeftribestore.png"
+									alt=""
+								/>
+								<h4 class="text-center">ReefTribe Shopify Store</h4></a
+							>
+						</div>
 					</div>
 				</div>
+
+				<br />
 				<div class="slideShow">
 					<h3>What Our Clients Think Of Us:</h3>
 					<br />
