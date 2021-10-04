@@ -41,7 +41,6 @@
 			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 		<link
 			rel="stylesheet"
@@ -52,6 +51,11 @@
 
 		<link
 			href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
@@ -90,7 +94,7 @@
 					<!-- Collapsible content -->
 					<div class="collapse navbar-collapse" id="navbarSupportedContent15">
 						<!-- Links -->
-						<ul class="navbar-nav mr-auto">
+						<ul class="navbar-nav mr-auto text-sm-right text-center">
 							<li class="nav-item active NavCol">
 								<a class="nav-link" href="index.html"
 									>CB-UX Home<span class="sr-only">(current)</span></a
@@ -130,7 +134,7 @@
 					<h1>responsive HTML development</h1>
 				</div>
 				<div class="c">
-					<img src="assetts/images/css3.jpg" alt="html" />
+					<img src="assetts/images/css3.jpg" alt="css" />
 					<h1>rich and responsive css styling</h1>
 				</div>
 				<div class="d">
@@ -155,10 +159,7 @@
 				<div class="MyRecentWork">
 					<h3>My Recent Work</h3>
 				</div>
-				<div class="container-fluid">
-					<script>
-						AOS.init();
-					</script>
+				<div id="page2" class="container-fluid">
 					<div class="row">
 						<div
 							data-aos-duration="3000"
@@ -201,7 +202,7 @@
 									src="assetts/images/cbux.png"
 									alt=""
 								/>
-								<h4 class="text-center">Aluminium And Glassmaster</h4></a
+								<h4 class="text-center">CB-UX</h4></a
 							>
 						</div>
 					</div>
@@ -234,41 +235,67 @@
 								<h4 class="text-center">Probity Mortgages</h4></a
 							>
 						</div>
-					</div>
-					<div class="row justify-content-center">
-						<div class="col-md-6 px-md-5 py-md-5">
-							<a href="https://www.gskeys.co.za/"
-								><img
-									class="border border-white"
-									src="assetts/images/gskeys.png"
-									alt=""
-								/>
-								<h4 class="text-center">GS Keys</h4></a
-							>
+						<div class="row">
+							<div data-aos="fade-up-right" class="col-md-6 px-md-5 py-md-5">
+								<a href="https://store.reeftribe.co.za/"
+									><img
+										class="border border-white"
+										src="assetts/images/reeftribe.png"
+										alt=""
+									/>
+									<h4 class="text-center">ReefTribe</h4></a
+								>
+							</div>
+							<div data-aos="fade-up-left" class="col-md-6 px-md-5 py-md-5">
+								<a href="https://store.reeftribe.co.za/"
+									><img
+										class="border border-white"
+										src="assetts/images/reeftribestore.png"
+										alt=""
+									/>
+									<h4 class="text-center">ReefTribe Shopify Store</h4></a
+								>
+							</div>
 						</div>
 					</div>
 					<div class="MyRecentWork">
 						<h3>Current / Under Construction</h3>
 					</div>
 					<div class="row">
-						<div class="col-md-6 px-md-5 py-md-5">
-							<a href="https://store.reeftribe.co.za/"
+						<div data-aos="fade-up-right" class="col-md-6 px-md-5 py-md-5">
+							<a href=""
 								><img
 									class="border border-white"
-									src="assetts/images/reeftribe.png"
+									src="assetts/images/NoniSands.png"
 									alt=""
 								/>
-								<h4 class="text-center">ReefTribe</h4></a
+								<h4 class="text-center">Noni Sands Guest House</h4></a
 							>
 						</div>
-						<div class="col-md-6 px-md-5 py-md-5">
-							<a href="https://www.probitymortgages.co.uk/"
+						<div data-aos="fade-up-left" class="col-md-6 px-md-5 py-md-5">
+							<a href=""
 								><img
 									class="border border-white"
-									src="assetts/images/reeftribestore.png"
+									src="assetts/images/PHARAOHS LOGO.png"
 									alt=""
 								/>
-								<h4 class="text-center">ReefTribe Shopify Store</h4></a
+								<h4 class="text-center">Pharaohs Construction</h4></a
+							>
+						</div>
+					</div>
+					<div class="row">
+						<div
+							data-aos="zoom-in"
+							data-aos-duration="3000"
+							class="col-md-12 px-md-5 py-md-5"
+						>
+							<a href=""
+								><img
+									class="border border-white"
+									src="assetts/images/Locked&Loaded.jpg"
+									alt=""
+								/>
+								<h4 class="text-center">Locked & Loaded New Zeland</h4></a
 							>
 						</div>
 					</div>
@@ -392,7 +419,13 @@
 				</div>
 			</div>
 		</footer>
-
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				easing: "ease-out-back",
+				duration: 1000,
+			});
+		</script>
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

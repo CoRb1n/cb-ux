@@ -4,8 +4,8 @@ html body {
 	width: 100%;
 	padding: 5% 5%;
 	margin: auto;
-	font-family: "Roboto Mono", monospace;
 	line-height: 1.2rem;
+	font-family: "Quicksand", sans-serif;
 }
 
 .bg-darkk {
@@ -126,8 +126,15 @@ button.navbar-toggler {
 	text-align: center;
 	text-transform: uppercase;
 	color: darkgray;
-	font-family: "Ubuntu", sans-serif;
 	font-size: 1.3rem;
+}
+
+#page2 h4 {
+	color: darkgray;
+}
+
+#page2 h4:hover {
+	color: white;
 }
 
 img {
@@ -396,18 +403,20 @@ img {
 	text-align: center;
 }
 
+.slideShow h4 {
+	font-weight: 900;
+}
+
 @media (max-width: 600px) {
 	.slideShow {
 		overflow: hidden;
 		position: relative;
 		color: white;
-		height: 1000px;
+		height: 600px;
 		width: 100%;
 		text-align: center;
 	}
-	.slideShow > h1 {
-		font-size: ;
-	}
+
 	.item-1,
 	.item-2,
 	.item-3 {
@@ -632,13 +641,12 @@ img {
 }
 
 .MyRecentWork,
-h2 {
+h3 {
 	text-align: center;
 	color: white;
 	padding-top: 5%;
 	padding-bottom: 3%;
 	font-weight: bolder;
-	text-decoration: underline;
 }
 
 .recent {
@@ -669,10 +677,6 @@ h2 {
 	color: black;
 	background: white;
 	text-align: center;
-}
-
-.slideShow h4 {
-	text-decoration: underline;
 }
 
 .splash {
@@ -982,4 +986,8 @@ textarea {
 		padding: 0 !important;
 		text-align: left;
 	}
+}
+
+#page2 a:hover {
+	text-decoration: none;
 }
